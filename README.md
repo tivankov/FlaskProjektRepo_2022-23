@@ -1,4 +1,4 @@
-# ¸Privatni git Flask projekta na kolegiju "Programiranje za web"
+# Privatni git Flask projekta na kolegiju "Programiranje za web"
 ## Zadatak
 Potrebno je samostalno osmisliti i isprogramirati Flask web aplikaciju.
 
