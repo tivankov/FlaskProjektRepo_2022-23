@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Gurman HR | Događaji</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <h1 class="site-heading text-center text-faded d-none d-lg-block">
+                <span class="site-heading-upper text-primary mb-3"><a style="text-decoration: none;" href="/">{{imestranice}}</a></span>
+                <span class="site-heading-lower">{{naslov}}</span>
+            </h1>
+        </header>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="/">Gurman HR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="/">Naslovnica</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="/dogadaji">Događaji</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="/onama">O nama</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="/kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="page-section">
+            <div class="container">
+                <div class="product-item">
+                    <div class="product-item-title d-flex">
+                        <div class="bg-faded p-5 d-flex ms-auto rounded">
+                            <h2 class="section-heading mb-0">
+                                <span class="section-heading-lower">Božićni ručak</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{{ url_for('static', filename='bozicnirucak.jpg') }}" alt="..." />
+                    <div class="product-item-description d-flex me-auto">
+                        <div class="bg-faded p-5 rounded"><p class="mb-0">
+                            Ove godine organiziramo Božićni ručak koji će se odvijati na Božić u periodu od 11 do 15 sati. Mi ćemo se pobrinuti kako biste se osjećali ugodno u toplom okruženju najmilijih.<br>
+                            Potrebno je napraviti rezervaciju najkasnije dan prije događaja (24.12.2022.)<br>
+                            Kada dođete u restoran potrebno je javiti se osoblju te će Vas oni uputiti do Vašeg mjesta.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section">
+            <div class="container">
+                <div class="product-item">
+                    <div class="product-item-title d-flex">
+                        <div class="bg-faded p-5 d-flex me-auto rounded">
+                            <h2 class="section-heading mb-0">
+                                <span class="section-heading-lower">Doček nove godine</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{{ url_for('static', filename='novogodisnjavecera.webp') }}" alt="..." />
+                    <div class="product-item-description d-flex ms-auto">
+                        <div class="bg-faded p-5 rounded"><p class="mb-0">
+                            Ove godine organiziramo čak i doček te proslavu nove godine. Dođite kod nas ispratiti staru i dočekati novu 2023. godinu. Novogodišnja večera će se odvijati od 21 do 4 sata ujutro. Mi ćemo se pobrinuti kako biste se osjećali ugodno u toplom okruženju najmilijih.<br>
+                            Potrebno je napraviti rezervaciju najkasnije dan prije događaja (31.12.2022.)<br>
+                            Kada dođete u restoran potrebno je javiti se osoblju te će Vas oni uputiti do Vašeg mjesta.
+                        </p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section">
+            <div class="container">
+                <div class="product-item">
+                    <div class="product-item-title d-flex">
+                        <div class="bg-faded p-5 d-flex ms-auto rounded">
+                            <h2 class="section-heading mb-0">
+                                <span class="section-heading-lower">Večera za Valentinovo</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{{ url_for('static', filename='valentinovo.webp') }}" alt="..." />
+                    <div class="product-item-description d-flex me-auto">
+                        <div class="bg-faded p-5 rounded"><p class="mb-0">Večera za Valentinovo će se odvijati od 18 do 21 sat. Mi ćemo se pobrinuti kako biste se osjećali ugodno u toplom okruženju voljene osobe.<br>
+                            Potrebno je napraviti rezervaciju najkasnije dan prije događaja (13.2.2023.)<br> Kada dođete u restoran potrebno je javiti se osoblju te će Vas oni uputiti do Vašeg mjesta.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer text-faded text-center py-5">
+            <div class="container"><p class="m-0 small">Copyright &copy; {{copyright}}</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

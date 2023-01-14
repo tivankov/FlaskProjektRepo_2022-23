@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Gurman HR</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <h1 class="site-heading text-center text-faded d-none d-lg-block">
+                <span class="site-heading-upper text-primary mb-3"><a style="text-decoration: none;" href="/">{{imestranice}}</a></span>
+                <span class="site-heading-lower">{{naslov}}</span>
+            </h1>   
+        </header>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="/">Gurman HR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="/">Naslovnica</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="/dogadaji">Događaji</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="/onama">O nama</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="/kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="page-section clearfix">
+            <div class="container">
+                <div class="intro">
+                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{ url_for('static', filename='background.webp') }}" alt="..." />
+                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                        <h2 class="section-heading mb-4">
+                            <span class="section-heading-upper">Najbolja Hrana</span>
+                            <span class="section-heading-lower">Rezerviraj svoj termin</span>
+                        </h2>
+                        <label for="Rezervacija">Ovdje odaberite termin koji Vam odgovara:</label>
+                        <p></p>
+  <select name="Rezervacija" id="Rezervacija">
+    <optgroup label="Danas">
+      <option value="13h">13 sati</option>
+      <option value="14h">14 sati</option>
+      <option value="15h">15 sati</option>
+      <option value="16h">16 sati</option>
+      <option value="17h">17 sati</option>
+      <option value="18h">18 sati</option>
+      <option value="19h">19 sati</option>
+      <option value="20h">20 sati</option>
+    </optgroup>
+    <optgroup label="Sutra">
+        <option value="13h">13 sati</option>
+        <option value="14h">14 sati</option>
+        <option value="15h">15 sati</option>
+        <option value="16h">16 sati</option>
+        <option value="17h">17 sati</option>
+        <option value="18h">18 sati</option>
+        <option value="19h">19 sati</option>
+        <option value="20h">20 sati</option>
+    </optgroup>
+  </select>
+  <select name="Rezervacija" id="Rezervacija">
+    <optgroup label="Broj osoba">
+      <option value="1">1 osoba</option>
+      <option value="2">2 osobe</option>
+      <option value="3">3 osobe</option>
+      <option value="4">4 osobe</option>
+      <option value="5">5 osobe</option>
+      <option value="6">6 osobe</option>
+      <option value="7">7 osobe</option>
+      <option value="8">8 osobe</option>
+      <option value="9">9 osobe</option>
+      <option value="10">10 osoba</option>
+
+    </optgroup>
+  </select>
+  <br><br>
+  <input type="submit" value="Pošalji rezervaciju" onclick="alert('Rezervacija zaprimljena, molimo platite kaparu!')">
+  <p></p>
+  <p>
+    Nakon rezervacije potrebno je platiti kaparu najkasnije 2 sata nakon rezervacije. Kapara iznosi 200KN ili €26.47 te ju je potrebno platiti <a href="/placanje"><b>OVDJE</b></a> kako bi rezervacija bila uspješna<br>
+</p>
+                        <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="/dogadaji">Pogledaj listu događaja</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded text-center rounded">
+                            <h2 class="section-heading mb-4">
+                                <span class="section-heading-upper">Naša ponuda</span>
+                                <span class="section-heading-lower">Lista najtraženijih jela</span>
+                            </h2>
+                            <p class="mb-0">
+                                <ul>
+                                    <li>Punjena piletina s povrćem, slaninom i sirom</li>
+                                    <li>Plata s vješalicom, piletinom i svinjskim odreskom</li>
+                                    <li>Plata s pečenim gljivama, ćevapima, pomfritom i lukom</li>
+                                    <li>Plata s pljeskavicama, ćevapima i pekarskim krumpirom</li>
+                                    <li>Lignje na žaru s krumpirom i kapulom ispod peke</li>
+                                </ul>
+                                <br>
+                            </p>
+                            <h4>Glasaj za svoje najdraže jelo</h4>
+                            <select name="Rezervacija" id="Rezervacija">
+                                <optgroup label="Najdraže jelo">
+                                    <option value="1">Punjena piletina s povrćem, slaninom i sirom</option>
+                                    <option value="2">Plata s vješalicom, piletinom i svinjskim odreskom</option>
+                                    <option value="3">Plata s pečenim gljivama, ćevapima, pomfritom i lukom</option>
+                                    <option value="4">Plata s pljeskavicama, ćevapima i pekarskim krumpirom</option>
+                                    <option value="5">Lignje na žaru s krumpirom i kapulom ispod peke</option>
+                                </optgroup>
+                              </select>
+                              <input type="submit" value="Pošalji svoj glas">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer text-faded text-center py-5">
+            <div class="container"><p class="m-0 small">Copyright &copy; {{copyright}}</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
