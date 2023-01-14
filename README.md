@@ -1,4 +1,28 @@
-# Privatni git Flask projekta na kolegiju "Programiranje za web"
+# Flask projekt kolegija "Programiranje za web"
+
+## Krati opis
+Ovo je web stranica izmišljenog gurmanskog sajma.
+Stranica je namijenjena je svim ljubiteljima hrane.
+Preko stranice korisnik može vidjeti sve događaje na sajmu i 
+napraviti rezervaciju mjesta. Također stranica osigurava
+plaćanje kapare/pologa kako bi se potvrdila rezervacija.
+Stranica je napisana u Flasku, HTML-u.
+Pomoću JINJA templatea je osigurano lakše uređivanje
+važnih informacija na stranici
+
+
+## Upute za pokretanje web stranice
+* git clone https://github.com/unizd-sit-web/flask-projekt-tivankov.git
+* cd flask-projekt-tivankov
+* py -m venv venv
+* \venv\Scripts\Activate.ps1
+* pip install -r requirements.txt
+* $env:FLASK_APP = ”web.py”
+* $env:FLASK_DEBUG="1"
+* flask run
+
+---
+
 ## Zadatak
 Potrebno je samostalno osmisliti i isprogramirati Flask web aplikaciju.
 
